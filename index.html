@@ -12,10 +12,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            black: '#0a0a0a',
-                            card: '#141414',
+                            black: '#050505',
+                            card: '#121212',
                             border: '#262626',
-                            hover: '#1f1f1f',
+                            hover: '#1a1a1a',
                             white: '#ffffff',
                             muted: '#a1a1aa'
                         }
@@ -35,7 +35,7 @@
         }
 
         .copied-anim {
-            background-color: #ffffff !important;
+            background-color: #e5e7eb !important;
             color: #000000 !important;
         }
 
@@ -47,36 +47,53 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-white selection:text-black antialiased">
 
-    <!-- Header -->
-    <header class="w-full max-w-5xl mx-auto px-4 pt-8 pb-4">
-        <div class="bg-brand-card border border-brand-border rounded-full px-6 py-4 flex items-center justify-between shadow-2xl">
-            <div>
-                <h1 class="font-bold text-lg leading-none tracking-wide text-white">MiGiTi Proxy</h1>
-                <p class="text-xs text-brand-muted mt-1 font-mono">Auto-aggregated Proxy Subscriptions</p>
-            </div>
-            <a href="https://github.com/misha12333211-ctrl/proxy-subs" target="_blank" rel="noopener noreferrer" 
-               class="inline-flex items-center gap-2 bg-brand-border text-white text-xs font-medium px-4 py-2.5 rounded-full">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>GitHub</span>
+    <!-- Header (Compact & Light) -->
+    <header class="w-full max-w-5xl mx-auto px-4 pt-6 pb-2">
+        <div class="bg-brand-card/80 backdrop-blur border border-brand-border rounded-full px-5 py-3 flex items-center justify-between shadow-2xl">
+            <a href="#" class="font-bold text-base tracking-wide text-white flex items-center gap-2.5 hover:opacity-90 transition-opacity">
+                <span class="relative flex h-2.5 w-2.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                MiGiTi Proxy
             </a>
+            
+            <div class="flex items-center gap-2">
+                <!-- Corrected Telegram Icon Button -->
+                <a href="https://t.me/MiGiTi_official_channel" target="_blank" rel="noopener noreferrer" 
+                   title="Telegram Канал"
+                   class="p-2.5 bg-brand-border hover:bg-brand-hover text-white rounded-full transition-all hover:scale-105 flex items-center justify-center">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                    </svg>
+                </a>
+
+                <!-- GitHub Icon Button -->
+                <a href="https://github.com/misha12333211-ctrl/proxy-subs" target="_blank" rel="noopener noreferrer" 
+                   title="GitHub Репозиторий"
+                   class="p-2.5 bg-brand-border hover:bg-brand-hover text-white rounded-full transition-all hover:scale-105 flex items-center justify-center">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="w-full max-w-5xl mx-auto px-4 py-8 flex-1">
+    <main class="w-full max-w-5xl mx-auto px-4 py-6 flex-1 space-y-8">
         
         <!-- Hero Section -->
-        <div class="mb-10 text-center sm:text-left bg-gradient-to-r from-brand-card to-black border border-brand-border p-8 rounded-3xl relative overflow-hidden">
-            <span class="inline-block px-3 py-1 bg-white/10 text-white text-xs font-mono rounded-full mb-4 border border-white/10">
-                Live Proxy Nodes
+        <div class="bg-gradient-to-br from-brand-card via-brand-card to-emerald-950/20 border border-brand-border p-6 sm:p-8 rounded-3xl relative overflow-hidden shadow-xl">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 text-white text-xs font-mono rounded-full mb-3 border border-white/10">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                Live Proxy Nodes Aggregator
             </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
-                Подписки для V2Ray / Xray
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+                Подписки V2Ray / Xray для России
             </h2>
-            <p class="text-brand-muted text-sm sm:text-base max-w-2xl leading-relaxed">
-                Автоматически проверенные и отсортированные узлы. Скопируйте ссылку или отсканируйте QR-код напрямую в клиент.
+            <p class="text-brand-muted text-xs sm:text-sm max-w-2xl leading-relaxed">
+                Автоматически проверенные и отсортированные публичные узлы. Скопируйте ссылку, используйте зеркало или отсканируйте QR-код в клиент.
             </p>
         </div>
 
@@ -84,7 +101,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- Card 1: Whitelist -->
-            <div class="bg-brand-card border border-brand-border rounded-3xl p-6 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-white/20 transition-all rounded-3xl p-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 bg-white text-black text-xs font-bold rounded-full uppercase tracking-wider">
@@ -101,23 +118,29 @@
                 <div class="space-y-3 pt-2 border-t border-brand-border/60">
                     <div class="flex flex-wrap sm:flex-nowrap gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt', this)" 
-                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors">
                             <span>Скопировать</span>
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt', 'MIGITI WHITELIST')" 
-                                class="bg-brand-border text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="bg-brand-border hover:bg-brand-hover text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors">
                             <span>QR-код</span>
                         </button>
                     </div>
-                    <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt" target="_blank" rel="noopener noreferrer" 
-                       class="block w-full text-center bg-transparent border border-brand-border text-brand-muted font-medium text-xs py-2.5 rounded-full">
-                        Посмотреть страницу
-                    </a>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            Исходник
+                        </a>
+                        <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            🪞 Зеркало
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 2: Fast -->
-            <div class="bg-brand-card border border-brand-border rounded-3xl p-6 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-white/20 transition-all rounded-3xl p-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 bg-white text-black text-xs font-bold rounded-full uppercase tracking-wider">
@@ -134,23 +157,29 @@
                 <div class="space-y-3 pt-2 border-t border-brand-border/60">
                     <div class="flex flex-wrap sm:flex-nowrap gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt', this)" 
-                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors">
                             <span>Скопировать</span>
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt', 'MIGITI FAST PING')" 
-                                class="bg-brand-border text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="bg-brand-border hover:bg-brand-hover text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors">
                             <span>QR-код</span>
                         </button>
                     </div>
-                    <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt" target="_blank" rel="noopener noreferrer" 
-                       class="block w-full text-center bg-transparent border border-brand-border text-brand-muted font-medium text-xs py-2.5 rounded-full">
-                        Посмотреть страницу
-                    </a>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            Исходник
+                        </a>
+                        <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            🪞 Зеркало
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 3: Universal -->
-            <div class="bg-brand-card border border-brand-border rounded-3xl p-6 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-white/20 transition-all rounded-3xl p-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 bg-white text-black text-xs font-bold rounded-full uppercase tracking-wider">
@@ -167,23 +196,29 @@
                 <div class="space-y-3 pt-2 border-t border-brand-border/60">
                     <div class="flex flex-wrap sm:flex-nowrap gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt', this)" 
-                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors">
                             <span>Скопировать</span>
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt', 'MIGITI UNIVERSAL')" 
-                                class="bg-brand-border text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="bg-brand-border hover:bg-brand-hover text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors">
                             <span>QR-код</span>
                         </button>
                     </div>
-                    <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt" target="_blank" rel="noopener noreferrer" 
-                       class="block w-full text-center bg-transparent border border-brand-border text-brand-muted font-medium text-xs py-2.5 rounded-full">
-                        Посмотреть страницу
-                    </a>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            Исходник
+                        </a>
+                        <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            🪞 Зеркало
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Card 4: NextGen -->
-            <div class="bg-brand-card border border-brand-border rounded-3xl p-6 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-white/20 transition-all rounded-3xl p-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 bg-white text-black text-xs font-bold rounded-full uppercase tracking-wider">
@@ -200,28 +235,95 @@
                 <div class="space-y-3 pt-2 border-t border-brand-border/60">
                     <div class="flex flex-wrap sm:flex-nowrap gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt', this)" 
-                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="flex-1 bg-white text-black font-semibold text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors">
                             <span>Скопировать</span>
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt', 'MIGITI STEALTH NEXTGEN')" 
-                                class="bg-brand-border text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2">
+                                class="bg-brand-border hover:bg-brand-hover text-white font-medium text-xs py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors">
                             <span>QR-код</span>
                         </button>
                     </div>
-                    <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt" target="_blank" rel="noopener noreferrer" 
-                       class="block w-full text-center bg-transparent border border-brand-border text-brand-muted font-medium text-xs py-2.5 rounded-full">
-                        Посмотреть страницу
-                    </a>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            Исходник
+                        </a>
+                        <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
+                           class="text-center bg-transparent border border-brand-border text-brand-muted hover:text-white font-medium text-[11px] py-2 rounded-full transition-colors">
+                            🪞 Зеркало
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
+
+        <!-- Section: System & Filter Criteria -->
+        <div class="bg-brand-card border border-brand-border p-6 rounded-3xl space-y-4">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <span>🔄</span> Актуализация и критерии отбора серверов
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-brand-muted">
+                <div class="bg-black/40 p-4 rounded-2xl border border-brand-border/50 space-y-2">
+                    <span class="font-semibold text-white block">Обновление и чистка</span>
+                    <p>Подписки пересобираются каждые <strong class="text-white">2–3 часа</strong>. Проводится сбор из 40+ публичных Open-Source источников, очистка дубликатов по IP, портам и UUID.</p>
+                </div>
+                <div class="bg-black/40 p-4 rounded-2xl border border-brand-border/50 space-y-2">
+                    <span class="font-semibold text-white block">Лимит и Uptime Streak</span>
+                    <p>Каждая подписка содержит <strong class="text-white">до 250 серверов</strong>. Узлы с высоким рейтингом бесперебойной работы (Uptime Streak) получают приоритет в ранжировании.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: YouTube AdBlock Rules -->
+        <div class="bg-brand-card border border-brand-border p-6 rounded-3xl space-y-4">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <span>🛡️</span> Блокировка рекламы на YouTube
+                </h3>
+                <span class="text-[11px] bg-white/10 text-white font-mono px-2.5 py-1 rounded-full border border-white/10">Авторская база</span>
+            </div>
+            <p class="text-xs text-brand-muted leading-relaxed">
+                Для блокировки рекламы и трекеров создайте в своём клиенте правило <strong class="text-white">«Блокировать / Block»</strong> и добавьте список доменов ниже:
+            </p>
+
+            <details class="group bg-black/40 rounded-2xl border border-brand-border/50 overflow-hidden">
+                <summary class="cursor-pointer p-4 text-xs font-semibold text-white flex justify-between items-center select-none hover:bg-white/5 transition-colors">
+                    <span>📋 Показать полный список доменов</span>
+                    <span class="transition-transform duration-200 group-open:rotate-180">▼</span>
+                </summary>
+                <div class="p-4 pt-0 border-t border-brand-border/30 mt-2">
+                    <div class="relative mt-3">
+                        <textarea readonly id="adblockRules" class="w-full h-36 bg-black text-brand-muted font-mono text-[10px] p-3 rounded-xl border border-brand-border focus:outline-none focus:border-white/40 resize-none">firebaselogging.googleapis.com,play.googleapis.com,google-analytics.com,ssl.google-analytics.com,doubleclick.net,*.doubleclick.net,pubads.g.doubleclick.net,pagead2.googlesyndication.com,googleadservices.com,domain:firebaseio.com,full:firebaselogging.googleapis.com,full:play.googleapis.com,domain:google-analytics.com,domain:doubleclick.net,full:pagead2.googlesyndication.com,full:googleadservices.com,full:s.youtube.com,full:video-stats.l.google.com,domain:crashlytics.com,domain:app-measurement.com,domain:googletagservices.com,domain:googletagmanager.com,domain:s.youtube.com,domain:video-stats.l.google.com,domain:exile.e.youtube.com,domain:google-analytics.com,domain:ssl.google-analytics.com,domain:stats.g.doubleclick.net,regexp:^.*youtube.*\/ptracking$,regexp:^.*youtube.*\/stream_204$,regexp:^.*youtube.*\/gen_204$,domain:sentry.io,domain:samsung-analytics.com,domain:samsungosp.com,geosite:category-ads-all,domain:sentry.io,domain:crashlytics.com,google-analytics.com,firebaseanalytics.amazonaws.com,firebaseio.com,crashlytics.com,telemetry.google,graph.facebook.com,facebook-hardware.com,analytics.whatsapp.com,crashlogs.whatsapp.net,stat.com.telegram,app-measurement.com,samsung-analytics.com,samsungosp.com,samsungcloudplatform.com,logging.samsungdm.com,com.sec.android.app.sbrowser,com.samsung.android.messaging,com.facebook.orca,com.whatsapp,com.android.chrome,com.google.android.googlequicksearchbox,com.android.vending,com.google.android.apps.maps,connectivitycheck.gstatic.com,telemetry.google.com,google-analytics.com,ssl.google-analytics.com,analytics.google.com,firebaseio.com,firebase-settings.crashlytics.com,crashlytics.com,reports.crashlytics.com,api.crashlytics.com,play.googleapis.com,android.clients.google.com,android-context-data.googleapis.com,safebrowsing.googleapis.com,app-measurement.com,adjust.com,app.tr.adjust.com,tracking.intl.miui.com,api.sec.intl.miui.com,api.ad.intl.xiaomi.com,data.mistat.xiaomi.com,sdkconfig.ad.intl.xiaomi.com,api.omc.samsungdm.com,samsung-directory.edge.hiyaapi.com,capi.samsungcloud.com,gos-api.gos-gsp.io,dir-apis.samsungdm.com,api.gras.samsungdm.com,sspapi-prd.samsungrs.com,sdk.pushmessage.samsung.com,us-api.mcsvc.samsung.com,eu-api.mcsvc.samsung.com,ie-odc.samsungapps.com,in.appcenter.ms,query.hicloud.com,configserverdre.platform.hicloud.com,servicesupport.hicloud.com,pebed.dmevent.net,telemetry.api.swiftkey.com,esa-reg-eup.myoppo.com,ifotaeu.realmemobile.com,ifotaus.realmemobile.com,domain:bixbywelcome.samsung.com,domain:bixby.samsung.com,domain:customization.samsung.com,domain:samsungcloud.com,domain:account.samsung.com,domain:legal.samsung.com,domain:galaxyapps.samsung.com,domain:fota-cloud-dn.ospserver.net,domain:oemprd.samsungcloudsolution.com,domain:telemetry.darkness.google,domain:android.bugreport.google.com,domain:location.googleapis.com,domain:coauth.googleapis.com,domain:grandcentral.googleapis.com,domain:speech.googleapis.com,domain:appsflyer.com,domain:appflyer.com,domain:amplitude.com,domain:api.amplitude.com,domain:mixpanel.com,domain:api.mixpanel.com,domain:flurry.com,domain:data.flurry.com,domain:onesignal.com,domain:branch.io,domain:api2.branch.io,domain:bugsnag.com,domain:notify.bugsnag.com,regexp:^analytics\..*$,regexp:^telemetry\..*$,regexp:^.*metrics.*$,regexp:^.*log-stat.*$,domain:time.android.com,domain:time.google.com,domain:time.windows.com</textarea>
+                        <!-- Made button white per user request -->
+                        <button onclick="copyAdblockRules(this)" class="mt-2 w-full sm:w-auto bg-white hover:bg-gray-200 text-black text-xs px-5 py-2.5 rounded-full font-semibold transition-colors">
+                            Скопировать список
+                        </button>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Section: Disclaimer & Donate Terms -->
+        <div class="bg-brand-card/40 border border-brand-border/60 p-6 rounded-3xl space-y-3 text-xs text-brand-muted">
+            <h4 class="font-bold text-white text-sm">⚖️ Отказ от ответственности (Disclaimer)</h4>
+            <p class="leading-relaxed">
+                Проект создается исключительно в ознакомительных, исследовательских и образовательных целях для изучения технологий маршрутизации и оптимизации сетевого трафика. Автор не предоставляет платных услуг и использует данные из публичных открытых источников. Пользователь несёт самостоятельную ответственность за соблюдение местного законодательства.
+            </p>
+            <div class="pt-2 border-t border-brand-border/40">
+                <span class="font-semibold text-white">Правила по пожертвованиям:</span>
+                <p class="mt-1 leading-relaxed">
+                    Все донаты являются строго добровольными и безвозмездными (Donation / Gift). Они не являются оплатой услуг, не дают коммерческих гарантий или персонального обслуживания. Возврат средств после отправки не производится.
+                </p>
+            </div>
+        </div>
+
     </main>
 
     <!-- Modal QR Code -->
     <div id="qrModal" class="fixed inset-0 bg-black/80 modal-blur z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-8 max-w-sm w-full text-center relative shadow-2xl" id="qrModalContent">
-            <button onclick="closeQr()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-brand-border text-white flex items-center justify-center">
+            <button onclick="closeQr()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-brand-border text-white flex items-center justify-center hover:bg-brand-hover transition-colors">
                 ✕
             </button>
             <h3 id="qrTitle" class="text-lg font-bold text-white mb-4">QR-код подписки</h3>
@@ -231,10 +333,10 @@
             </div>
 
             <p class="text-xs text-brand-muted mb-6">
-                Отсканируйте код в приложении клиенте.
+                Отсканируйте код в приложении-клиенте.
             </p>
 
-            <button onclick="closeQr()" class="w-full bg-white text-black font-semibold text-xs py-3 rounded-full">
+            <button onclick="closeQr()" class="w-full bg-white text-black font-semibold text-xs py-3 rounded-full hover:bg-gray-200 transition-colors">
                 Закрыть
             </button>
         </div>
@@ -252,21 +354,21 @@
                 
                 <div class="flex flex-wrap items-center justify-center gap-2">
                     <a href="https://messenger.online.sberbank.ru/sl/HB0CuMt88gO20oajp" target="_blank" rel="noopener noreferrer" 
-                       class="bg-brand-border text-white text-[11px] font-medium px-3.5 py-2 rounded-full">
+                       class="bg-brand-border hover:bg-brand-hover text-white text-[11px] font-medium px-3.5 py-2 rounded-full transition-colors">
                         Сбер
                     </a>
 
                     <button onclick="copyTonWallet('UQB4NY_1ula9p2YJpM0kHPEjbJOmOUK1JNwYUNu9_T2TlAbt', this)" 
-                            class="bg-brand-border text-white text-[11px] font-medium px-3.5 py-2 rounded-full">
-                        Ton Кошелек
+                            class="bg-brand-border hover:bg-brand-hover text-white text-[11px] font-medium px-3.5 py-2 rounded-full transition-colors">
+                        TON Кошелек
                     </button>
 
                     <a href="https://www.donationalerts.com/r/diagomalacco" target="_blank" rel="noopener noreferrer" 
-                       class="bg-brand-border text-white text-[11px] font-medium px-3.5 py-2 rounded-full">
+                       class="bg-brand-border hover:bg-brand-hover text-white text-[11px] font-medium px-3.5 py-2 rounded-full transition-colors">
                         DonationAlerts
                     </a>
                     <a href="https://www.patreon.com/cw/MiGiTiVlessSubscriptions/shop?sort=published_at" target="_blank" rel="noopener noreferrer" 
-                       class="bg-brand-border text-white text-[11px] font-medium px-3.5 py-2 rounded-full">
+                       class="bg-brand-border hover:bg-brand-hover text-white text-[11px] font-medium px-3.5 py-2 rounded-full transition-colors">
                         Patreon
                     </a>
                 </div>
@@ -275,12 +377,12 @@
             <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] text-brand-muted font-mono pt-2 border-t border-brand-border/40">
                 <div>
                     <span>Поддержка:</span>
-                    <a href="mailto:Fageter@protonmail.com" class="text-white">Fageter@protonmail.com</a>
+                    <a href="mailto:Fageter@protonmail.com" class="text-white hover:underline">Fageter@protonmail.com</a>
                 </div>
 
                 <div>
-                    <a href="https://github.com/misha12333211-ctrl/proxy-subs" target="_blank" rel="noopener noreferrer" class="text-brand-muted">
-                        Репозиторий: github.com/misha12333211-ctrl/proxy-subs
+                    <a href="https://github.com/misha12333211-ctrl/proxy-subs" target="_blank" rel="noopener noreferrer" class="text-brand-muted hover:text-white transition-colors">
+                        github.com/misha12333211-ctrl/proxy-subs
                     </a>
                 </div>
             </div>
@@ -330,6 +432,20 @@
 
         async function copyTonWallet(address, btn) {
             const success = await copyToClipboard(address);
+            if (success && btn) {
+                const originalContent = btn.innerHTML;
+                btn.classList.add('copied-anim');
+                btn.innerHTML = `<span>Скопировано!</span>`;
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.classList.remove('copied-anim');
+                }, 2000);
+            }
+        }
+
+        async function copyAdblockRules(btn) {
+            const rules = document.getElementById('adblockRules').value;
+            const success = await copyToClipboard(rules);
             if (success && btn) {
                 const originalContent = btn.innerHTML;
                 btn.classList.add('copied-anim');
