@@ -3,14 +3,14 @@
   # 🌐 MiGiTi Vless Configs For Russia
 
   <p align="center">
-    <a href="https://github.com/misha12333211-ctrl/proxy-subs/stargazers">
+    <a href="https://github.com/misha12333211-ctrl/MiGiTi/stargazers">
       <img src="https://img.shields.io/github/stars/misha12333211-ctrl/MiGiTi?style=for-the-badge&color=007EC6&logo=github" alt="Stars">
     </a>
-    <a href="https://github.com/misha12333211-ctrl/proxy-subs/commits/main">
-      <img src="https://img.shields.io/github/last-commit/misha12333211-ctrl/proxy-subs?style=for-the-badge&color=007EC6&logo=git" alt="Last Commit">
+    <a href="https://github.com/misha12333211-ctrl/MiGiTi/commits/main">
+      <img src="https://img.shields.io/github/last-commit/misha12333211-ctrl/MiGiTi?style=for-the-badge&color=007EC6&logo=git" alt="Last Commit">
     </a>
-    <a href="https://github.com/misha12333211-ctrl/proxy-subs">
-      <img src="https://komarev.com/ghpvc/?username=misha12333211-ctrl-proxy-subs&style=for-the-badge&color=007EC6&label=VISITORS" alt="Visitors Count">
+    <a href="https://github.com/misha12333211-ctrl/MiGiTi">
+      <img src="https://komarev.com/ghpvc/?username=misha12333211-ctrl-MiGiTi&style=for-the-badge&color=007EC6&label=VISITORS" alt="Visitors Count">
     </a>
     <img src="https://img.shields.io/badge/Status-Online-brightgreen?style=for-the-badge&logo=statuspage" alt="Status">
   </p>
