@@ -4,7 +4,7 @@
 
   <p align="center">
     <a href="https://github.com/misha12333211-ctrl/proxy-subs/stargazers">
-      <img src="https://img.shields.io/github/stars/misha12333211-ctrl/proxy-subs?style=for-the-badge&color=007EC6&logo=github" alt="Stars">
+      <img src="https://img.shields.io/github/stars/misha12333211-ctrl/MiGiTi?style=for-the-badge&color=007EC6&logo=github" alt="Stars">
     </a>
     <a href="https://github.com/misha12333211-ctrl/proxy-subs/commits/main">
       <img src="https://img.shields.io/github/last-commit/misha12333211-ctrl/proxy-subs?style=for-the-badge&color=007EC6&logo=git" alt="Last Commit">
