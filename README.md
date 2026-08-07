@@ -2,13 +2,7 @@
 
   # 🌐 MiGiTi Vless Configs For Russia
 
-  <p align="center">
-    <!-- Quick Language Jump -->
-    <a href="#-о-проекте"><b>Русский</b></a> • <a href="#-about-the-project"><b>English</b></a>
-  </p>
-
-  <p align="center">
-    <!-- Badges / Tags -->
+  <p center>
     <img src="https://img.shields.io/badge/VLESS-Proxy-blue?style=for-the-badge&logo=v2ray" alt="VLESS">
     <img src="https://img.shields.io/badge/Xray-Core-orange?style=for-the-badge" alt="Xray">
     <img src="https://img.shields.io/badge/Routing-Russia-green?style=for-the-badge" alt="Russia Routing">
@@ -29,10 +23,6 @@
   </p>
 
   <p align="center">
-    <b>🚀 Автоматический агрегатор публичных конфигураций V2Ray / Xray с проверкой доступности, фильтрацией пинга и дедупликацией.</b>
-  </p>
-
-  <p align="center">
     🌐 <a href="https://misha12333211-ctrl.github.io/MiGiTi/"><b>Официальный сайт</b></a> •
     💬 <a href="https://t.me/MiGiTi_official_channel"><b>Telegram-канал</b></a> •
     📧 <a href="mailto:Fageter@protonmail.com"><b>Связаться по Email</b></a>
@@ -40,7 +30,70 @@
 
 </div>
 
+<!-- CSS Стиль переключения языков -->
+<style>
+  /* Скрытие радиопереключателей */
+  input[name="lang-switch"] {
+    display: none;
+  }
+
+  /* Стиль интерактивных переключателей */
+  .lang-picker {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .lang-btn {
+    padding: 6px 16px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background: #21262d;
+    color: #c9d1d9;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    user-select: none;
+    transition: all 0.2s ease;
+  }
+
+  .lang-btn:hover {
+    background: #30363d;
+    border-color: #8b949e;
+  }
+
+  /* Активное состояние кнопок и скрытие/показ контента */
+  #lang-ru-switch:checked ~ .lang-picker label[for="lang-ru-switch"],
+  #lang-en-switch:checked ~ .lang-picker label[for="lang-en-switch"] {
+    background: #1f6feb;
+    border-color: #388bfd;
+    color: #ffffff;
+  }
+
+  #lang-ru-switch:checked ~ .lang-en,
+  #lang-en-switch:checked ~ .lang-ru {
+    display: none !important;
+  }
+</style>
+
+<!-- Интерактивные радио-кнопки переключения -->
+<input type="radio" id="lang-ru-switch" name="lang-switch" checked>
+<input type="radio" id="lang-en-switch" name="lang-switch">
+
+<div class="lang-picker" align="center">
+  <label for="lang-ru-switch" class="lang-btn">🇷🇺 Русский</label>
+  <label for="lang-en-switch" class="lang-btn">🇬🇧 English</label>
+</div>
+
 ---
+
+<!-- РУССКАЯ ВЕРСИЯ -->
+<div class="lang-ru">
+
+<p align="center">
+  <b>🚀 Автоматический агрегатор публичных конфигураций V2Ray / Xray с проверкой доступности, фильтрацией пинга и дедупликацией.</b>
+</p>
 
 ## 📌 О ПРОЕКТЕ
 
@@ -237,13 +290,14 @@
 * 💬 **Telegram:** [MiGiTi Official Channel](https://t.me/MiGiTi_official_channel)
 * 📧 **Email:** [Fageter@protonmail.com](mailto:Fageter@protonmail.com)
 
-<br>
+</div>
 
----
+<!-- АНГЛИЙСКАЯ ВЕРСИЯ -->
+<div class="lang-en">
 
-<!-- ENGLISH VERSION COLLAPSED UNDER DETAILS -->
-<details>
-<summary><h2>Click here to expand ENGLISH VERSION</h2></summary>
+<p align="center">
+  <b>🚀 Automated V2Ray / Xray public configuration aggregator with availability verification, latency filtering, and deduplication.</b>
+</p>
 
 ## 📌 ABOUT THE PROJECT
 
@@ -437,7 +491,7 @@ This project is completely free, but maintaining and processing node databases r
 * 💬 **Telegram:** [MiGiTi Official Channel](https://t.me/MiGiTi_official_channel)
 * 📧 **Email:** [Fageter@protonmail.com](mailto:Fageter@protonmail.com)
 
-</details>
+</div>
 
 <br>
 
