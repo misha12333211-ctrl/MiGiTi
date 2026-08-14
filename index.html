@@ -48,32 +48,28 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-zinc-700 selection:text-white antialiased">
 
-    <!-- Toast Notification Container -->
-    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
-
     <!-- Header -->
     <header class="w-full max-w-5xl mx-auto px-4 pt-4 sm:pt-6">
-        <div class="bg-brand-card border border-brand-border rounded-2xl px-4 py-3 flex items-center justify-between gap-3">
+        <div class="bg-brand-card border border-brand-border rounded-2xl px-4 py-3 flex items-center justify-between gap-3 flex-wrap sm:flex-nowrap">
             <a href="#" class="font-semibold text-sm sm:text-base tracking-tight text-white flex items-center gap-2.5">
                 <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span>MiGiTi Proxy</span>
             </a>
             
-            <div class="flex items-center gap-2">
-                <!-- Telegram Bot Button -->
-                <a href="https://t.me/MiGiTiProxySubscriptionsBot" target="_blank" rel="noopener noreferrer"
-                   title="Telegram Бот"
+            <div class="flex items-center gap-2 flex-wrap">
+                <!-- Telegram Bot Link -->
+                <a href="https://t.me/MiGiTiProxySubscriptionsBot" target="_blank" rel="noopener noreferrer" 
                    class="px-3 py-1.5 bg-sky-500/10 border border-sky-500/20 text-sky-400 hover:bg-sky-500/20 rounded-lg flex items-center gap-1.5 text-xs font-medium transition">
                     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
                     </svg>
-                    <span>Бот</span>
+                    <span data-i18n="navBot">Bot</span>
                 </a>
 
-                <!-- Telegram Channel Button -->
+                <!-- Telegram Channel Icon -->
                 <a href="https://t.me/MiGiTi_official_channel" target="_blank" rel="noopener noreferrer" 
-                   title="Telegram-канал"
-                   class="p-2 bg-brand-border/50 text-zinc-300 hover:bg-brand-border rounded-lg transition">
+                   title="Telegram Channel"
+                   class="p-2 bg-brand-border/50 text-zinc-300 hover:text-white rounded-lg transition">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
                     </svg>
@@ -81,12 +77,18 @@
 
                 <!-- GitHub Stars Button -->
                 <a href="https://github.com/misha12333211-ctrl/proxy-subs" target="_blank" rel="noopener noreferrer" 
-                   class="px-3 py-1.5 bg-brand-border/50 hover:bg-brand-border text-zinc-300 rounded-lg flex items-center gap-1.5 text-xs font-medium transition">
+                   class="px-3 py-1.5 bg-brand-border/50 text-zinc-300 hover:text-white rounded-lg flex items-center gap-1.5 text-xs font-medium transition">
                     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                     </svg>
                     <span>★ <span id="headerStarCount">0</span></span>
                 </a>
+
+                <!-- Language Toggle Switcher -->
+                <button onclick="toggleLanguage()" id="langBtn"
+                        class="px-2.5 py-1.5 bg-brand-border/60 hover:bg-brand-border text-zinc-200 rounded-lg text-xs font-mono font-semibold transition border border-brand-border">
+                    EN
+                </button>
             </div>
         </div>
     </header>
@@ -96,11 +98,12 @@
         
         <!-- Zero Stars Banner -->
         <div id="zeroStarsNotice" class="hidden bg-amber-500/10 border border-amber-500/20 p-4 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-            <div class="text-xs sm:text-sm text-amber-200/90">
-                У репозитория пока <strong>0 звёзд</strong>. Вы можете быть первым кто поставит звезду!
+            <div class="text-xs sm:text-sm text-amber-200/90" data-i18n="zeroStarsText">
+                У репозитория пока <strong>0 звёзд</strong>. Вы можете быть первым, кто поставит звезду!
             </div>
             <a href="https://github.com/misha12333211-ctrl/proxy-subs" target="_blank" rel="noopener noreferrer" 
-               class="px-3.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-black font-medium text-xs rounded-lg whitespace-nowrap transition">
+               class="px-3.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-black font-medium text-xs rounded-lg whitespace-nowrap transition"
+               data-i18n="starBtn">
                 Поставить звезду
             </a>
         </div>
@@ -111,73 +114,78 @@
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                 <span>Live Proxy Nodes Aggregator</span>
             </div>
-            <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2" data-i18n="heroTitle">
                 Агрегатор подписок v2ray
             </h1>
-            <p class="text-brand-muted text-xs sm:text-sm max-w-2xl leading-relaxed mb-4">
+            <p class="text-brand-muted text-xs sm:text-sm max-w-2xl leading-relaxed" data-i18n="heroSubtitle">
                 Автоматически проверенные публичные узлы. Скопируйте ссылку, используйте зеркало или отсканируйте QR-код в клиент.
             </p>
+        </div>
 
-            <!-- Telegram Bot Banner Callout -->
-            <div class="bg-sky-500/10 border border-sky-500/20 p-3.5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-                <div class="text-sky-200">
-                    🤖 <strong>Удобно в Telegram:</strong> Управляйте подписками, получайте QR-коды и обновления в боте.
-                </div>
-                <a href="https://t.me/MiGiTiProxySubscriptionsBot" target="_blank" rel="noopener noreferrer" 
-                   class="px-3 py-1.5 bg-sky-500 hover:bg-sky-400 text-black font-semibold text-xs rounded-lg whitespace-nowrap text-center transition">
-                    Открыть @MiGiTiProxySubscriptionsBot
+        <!-- Guides & Documentation Section -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6">
+            <div class="flex items-center gap-2 mb-3">
+                <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                <h2 class="text-base font-bold text-white" data-i18n="guidesTitle">Гайды и инструкции</h2>
+            </div>
+            <p class="text-brand-muted text-xs mb-4" data-i18n="guidesSubtitle">Подробные руководства по настройке клиентов v2ray на разных устройствах.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="https://misha12333211.yonote.ru/share/f11dd25b-fdb6-4bac-b130-c92ee01b6aee" target="_blank" rel="noopener noreferrer" 
+                   class="bg-zinc-900/60 hover:bg-zinc-800/80 border border-brand-border/80 hover:border-zinc-600 rounded-xl p-3.5 flex items-center justify-between gap-3 group transition">
+                    <div class="space-y-0.5">
+                        <span class="text-xs font-semibold text-white block group-hover:text-indigo-300 transition" data-i18n="v2rayngGuideTitle">Инструкция по v2rayNG</span>
+                        <span class="text-[11px] text-brand-muted block" data-i18n="v2rayngGuideDesc">Пошаговое руководство по настройке подписок на Android</span>
+                    </div>
+                    <svg class="w-4 h-4 text-zinc-500 group-hover:text-indigo-400 group-hover:translate-x-0.5 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
                 </a>
             </div>
         </div>
 
-        <!-- Live Search Filter -->
-        <div class="relative">
-            <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Поиск по названию или описанию подписки..." 
-                   class="w-full bg-brand-card border border-brand-border rounded-xl px-4 py-2.5 text-xs text-white placeholder-brand-muted focus:outline-none focus:border-zinc-500 transition">
-        </div>
-
         <!-- Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="cardsGrid">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             
-            <!-- Card 1: GO ENGINE (NEW TOP SUB) -->
-            <div class="card-item bg-gradient-to-b from-emerald-950/20 to-brand-card border border-emerald-500/30 rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-emerald-500 text-black text-[10px] font-bold px-2 py-0.5 rounded-bl">
-                    HOT / FAST
-                </div>
+            <!-- Card 1: Go Engine (NEW) -->
+            <div class="bg-brand-card border border-brand-border hover:border-zinc-700 transition rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
-                        <span class="text-xs font-mono font-semibold text-emerald-400">#01</span>
-                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">
-                            Высокая скорость
+                        <span class="text-xs font-mono font-semibold text-sky-400 bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded">NEW</span>
+                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded" data-i18n="updateFreq">
+                            Обновление каждые 3ч
                         </span>
                     </div>
-                    <h3 class="text-base font-bold text-white mb-1 flex items-center gap-2">
-                        <span>GO ENGINE</span>
-                        <span class="text-xs font-normal text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">NextGen Aggregator</span>
-                    </h3>
-                    <p class="text-brand-muted text-xs leading-relaxed mb-5">
-                        Быстрая и современная подписка на базе Go-движка. Высокая пропускная способность, минимальные задержки и поддержка актуальных протоколов.
+                    <h3 class="text-base font-bold text-white mb-1">GO ENGINE</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed mb-5" data-i18n="goEngineDesc">
+                        Высокоскоростная современная подписка на движке Go. Минимальная задержка и максимальная производительность.
                     </p>
                 </div>
 
                 <div class="space-y-2.5 pt-3 border-t border-brand-border/60">
                     <div class="flex gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/v2ray-aggregator-for-russia/refs/heads/main/sub.txt', this)" 
-                                class="flex-1 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs py-2 px-3 rounded-lg transition">
+                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
-                        <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/v2ray-aggregator-for-russia/refs/heads/main/sub.txt', 'MIGITI GO ENGINE')" 
-                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition">
+                        <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/v2ray-aggregator-for-russia/refs/heads/main/sub.txt', 'GO ENGINE SUB')" 
+                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition"
+                                data-i18n="btnQr">
                             QR-код
                         </button>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-[11px]">
                         <a href="https://raw.githubusercontent.com/misha12333211-ctrl/v2ray-aggregator-for-russia/refs/heads/main/sub.txt" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnSource">
                             Исходник
                         </a>
                         <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/v2ray-aggregator-for-russia/refs/heads/main/sub.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnMirror">
                             Зеркало
                         </a>
                     </div>
@@ -185,38 +193,42 @@
             </div>
 
             <!-- Card 2: Whitelist -->
-            <div class="card-item bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-zinc-700 transition rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
-                        <span class="text-xs font-mono font-semibold text-zinc-400">#02</span>
-                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">
+                        <span class="text-xs font-mono font-semibold text-zinc-400">#01</span>
+                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded" data-i18n="updateFreq">
                             Обновление каждые 3ч
                         </span>
                     </div>
                     <h3 class="text-base font-bold text-white mb-1">WHITELIST</h3>
-                    <p class="text-brand-muted text-xs leading-relaxed mb-5">
-                        Сервера которые работают при белых списках.
+                    <p class="text-brand-muted text-xs leading-relaxed mb-5" data-i18n="whitelistDesc">
+                        Сервера, работающие при жестких ограничениях и белых списках.
                     </p>
                 </div>
 
                 <div class="space-y-2.5 pt-3 border-t border-brand-border/60">
                     <div class="flex gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt', this)" 
-                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition">
+                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt', 'MIGITI WHITELIST')" 
-                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition">
+                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition"
+                                data-i18n="btnQr">
                             QR-код
                         </button>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-[11px]">
                         <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnSource">
                             Исходник
                         </a>
                         <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/1.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnMirror">
                             Зеркало
                         </a>
                     </div>
@@ -224,38 +236,42 @@
             </div>
 
             <!-- Card 3: Fast Ping -->
-            <div class="card-item bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-zinc-700 transition rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
-                        <span class="text-xs font-mono font-semibold text-zinc-400">#03</span>
-                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">
+                        <span class="text-xs font-mono font-semibold text-zinc-400">#02</span>
+                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded" data-i18n="updateFreq">
                             Обновление каждые 3ч
                         </span>
                     </div>
                     <h3 class="text-base font-bold text-white mb-1">FAST PING</h3>
-                    <p class="text-brand-muted text-xs leading-relaxed mb-5">
-                        Конфиги с низким пингом.
+                    <p class="text-brand-muted text-xs leading-relaxed mb-5" data-i18n="fastPingDesc">
+                        Конфигурации с наименьшим откликом для быстрого сёрфинга.
                     </p>
                 </div>
 
                 <div class="space-y-2.5 pt-3 border-t border-brand-border/60">
                     <div class="flex gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt', this)" 
-                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition">
+                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt', 'MIGITI FAST PING')" 
-                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition">
+                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition"
+                                data-i18n="btnQr">
                             QR-код
                         </button>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-[11px]">
                         <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnSource">
                             Исходник
                         </a>
                         <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/2.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnMirror">
                             Зеркало
                         </a>
                     </div>
@@ -263,38 +279,42 @@
             </div>
 
             <!-- Card 4: Stealth NextGen -->
-            <div class="card-item bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-zinc-700 transition rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
-                        <span class="text-xs font-mono font-semibold text-zinc-400">#04</span>
-                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">
+                        <span class="text-xs font-mono font-semibold text-zinc-400">#03</span>
+                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded" data-i18n="updateFreq">
                             Обновление каждые 3ч
                         </span>
                     </div>
                     <h3 class="text-base font-bold text-white mb-1">STEALTH NEXTGEN</h3>
-                    <p class="text-brand-muted text-xs leading-relaxed mb-5">
-                        Современные протоколы и устойчивый UDP.
+                    <p class="text-brand-muted text-xs leading-relaxed mb-5" data-i18n="stealthDesc">
+                        Современные скрытные протоколы и устойчивый UDP-трафик.
                     </p>
                 </div>
 
                 <div class="space-y-2.5 pt-3 border-t border-brand-border/60">
                     <div class="flex gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt', this)" 
-                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition">
+                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt', 'MIGITI STEALTH NEXTGEN')" 
-                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition">
+                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition"
+                                data-i18n="btnQr">
                             QR-код
                         </button>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-[11px]">
                         <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnSource">
                             Исходник
                         </a>
                         <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/3.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnMirror">
                             Зеркало
                         </a>
                     </div>
@@ -302,38 +322,42 @@
             </div>
 
             <!-- Card 5: Universal -->
-            <div class="card-item bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+            <div class="bg-brand-card border border-brand-border hover:border-zinc-700 transition rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-3">
-                        <span class="text-xs font-mono font-semibold text-zinc-400">#05</span>
-                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">
+                        <span class="text-xs font-mono font-semibold text-zinc-400">#04</span>
+                        <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded" data-i18n="updateFreq">
                             Обновление каждые 3ч
                         </span>
                     </div>
                     <h3 class="text-base font-bold text-white mb-1">UNIVERSAL</h3>
-                    <p class="text-brand-muted text-xs leading-relaxed mb-5">
-                        Универсальный набор протоколов.
+                    <p class="text-brand-muted text-xs leading-relaxed mb-5" data-i18n="universalDesc">
+                        Универсальный и сбалансированный набор всех поддерживаемых протоколов.
                     </p>
                 </div>
 
                 <div class="space-y-2.5 pt-3 border-t border-brand-border/60">
                     <div class="flex gap-2">
                         <button onclick="copyLink('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt', this)" 
-                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition">
+                                class="flex-1 bg-white hover:bg-zinc-200 text-black font-medium text-xs py-2 px-3 rounded-lg transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
                         <button onclick="openQr('https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt', 'MIGITI UNIVERSAL')" 
-                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition">
+                                class="bg-brand-border/60 hover:bg-brand-border text-zinc-200 text-xs px-3 py-2 rounded-lg transition"
+                                data-i18n="btnQr">
                             QR-код
                         </button>
                     </div>
                     <div class="grid grid-cols-2 gap-2 text-[11px]">
                         <a href="https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnSource">
                             Исходник
                         </a>
                         <a href="https://translate.yandex.ru/translate?url=https://raw.githubusercontent.com/misha12333211-ctrl/proxy-subs/refs/heads/main/4.txt&lang=de-de" target="_blank" rel="noopener noreferrer" 
-                           class="text-center bg-zinc-900/50 hover:bg-zinc-900 border border-brand-border text-zinc-400 py-1.5 rounded-lg transition">
+                           class="text-center bg-zinc-900/50 hover:bg-zinc-800/80 border border-brand-border text-zinc-400 hover:text-zinc-200 py-1.5 rounded-lg transition"
+                           data-i18n="btnMirror">
                             Зеркало
                         </a>
                     </div>
@@ -342,37 +366,12 @@
 
         </div>
 
-        <!-- Section: Guides & Documentation -->
-        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 space-y-4">
-            <div class="flex items-center gap-2">
-                <span class="p-1.5 bg-indigo-500/10 text-indigo-400 rounded-lg border border-indigo-500/20">📖</span>
-                <h2 class="text-base font-bold text-white">Гайды и Инструкции</h2>
-            </div>
-            <p class="text-xs text-brand-muted leading-relaxed">
-                Инструкции по настройке приложений и импорту подписок на различных устройствах:
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <!-- v2rayNG Guide Link -->
-                <a href="https://misha12333211.yonote.ru/share/f11dd25b-fdb6-4bac-b130-c92ee01b6aee" target="_blank" rel="noopener noreferrer" 
-                   class="group bg-zinc-950 hover:bg-zinc-900 border border-brand-border/80 p-4 rounded-xl flex items-center justify-between transition">
-                    <div class="space-y-1">
-                        <div class="text-xs font-semibold text-white group-hover:text-indigo-400 transition flex items-center gap-1.5">
-                            <span>Гайд по v2rayNG (Android)</span>
-                            <span class="text-[10px] text-brand-muted">↗</span>
-                        </div>
-                        <p class="text-[11px] text-brand-muted">Подробное руководство по установке и добавлению подписок.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
     </main>
 
     <!-- Modal QR Code -->
     <div id="qrModal" class="fixed inset-0 bg-black/70 modal-blur z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-brand-card border border-brand-border rounded-2xl p-6 max-w-sm w-full text-center relative shadow-xl" id="qrModalContent">
-            <button onclick="closeQr()" class="absolute top-4 right-4 w-7 h-7 rounded-lg bg-brand-border/50 text-zinc-400 flex items-center justify-center hover:bg-brand-border transition">
+            <button onclick="closeQr()" class="absolute top-4 right-4 w-7 h-7 rounded-lg bg-brand-border/50 hover:bg-brand-border text-zinc-400 hover:text-white flex items-center justify-center transition">
                 ✕
             </button>
             <h3 id="qrTitle" class="text-sm font-bold text-white mb-4">QR-код подписки</h3>
@@ -381,11 +380,11 @@
                 <img id="qrImage" src="" alt="Subscription QR Code" class="w-48 h-48 mx-auto rounded-md">
             </div>
 
-            <p class="text-[11px] text-brand-muted mb-5">
+            <p class="text-[11px] text-brand-muted mb-5" data-i18n="qrScanHint">
                 Отсканируйте код в приложении-клиенте.
             </p>
 
-            <button onclick="closeQr()" class="w-full bg-brand-border hover:bg-zinc-700 text-white font-medium text-xs py-2.5 rounded-lg transition">
+            <button onclick="closeQr()" class="w-full bg-brand-border hover:bg-zinc-700 text-white font-medium text-xs py-2.5 rounded-lg transition" data-i18n="btnClose">
                 Закрыть
             </button>
         </div>
@@ -395,27 +394,28 @@
     <footer class="w-full border-t border-brand-border/80 bg-zinc-950 py-8 mt-6">
         <div class="max-w-5xl mx-auto px-4 flex flex-col gap-6">
             
-            <!-- Блок донатов -->
+            <!-- Donations Block -->
             <div class="bg-brand-card border border-brand-border rounded-2xl p-5 space-y-4">
                 <div>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider" data-i18n="donateTitle">
                         Поддержать проект
                     </h4>
-                    <p class="text-xs text-brand-muted mt-1">
+                    <p class="text-xs text-brand-muted mt-1" data-i18n="donateSubtitle">
                         Если проект вам полезен, вы можете поддержать его развитие любым удобным способом:
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                     
-                    <!-- Сбербанк -->
+                    <!-- Sberbank -->
                     <div class="bg-zinc-950 border border-brand-border/80 rounded-xl p-3.5 flex items-center justify-between gap-3">
                         <div class="min-w-0">
-                            <span class="text-xs font-semibold text-white block">💳 Сбербанк</span>
+                            <span class="text-xs font-semibold text-white block">💳 Сбербанк / Sberbank</span>
                             <span class="font-mono text-[11px] text-brand-muted select-all tracking-wider">2202 2088 7649 2068</span>
                         </div>
                         <button onclick="copyToClipboardText('2202208876492068', this)" 
-                                class="px-3 py-1.5 bg-brand-border/60 hover:bg-brand-border text-white text-[11px] font-medium rounded-lg whitespace-nowrap transition">
+                                class="px-3 py-1.5 bg-brand-border/60 hover:bg-brand-border text-white text-[11px] font-medium rounded-lg whitespace-nowrap transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
                     </div>
@@ -427,7 +427,8 @@
                             <span class="font-mono text-[11px] text-brand-muted truncate block">UQB4NY_1ula9p2YJpM...2TlAbt</span>
                         </div>
                         <button onclick="copyToClipboardText('UQB4NY_1ula9p2YJpM0kHPEjbJOmOUK1JNwYUNu9_T2TlAbt', this)" 
-                                class="px-3 py-1.5 bg-brand-border/60 hover:bg-brand-border text-white text-[11px] font-medium rounded-lg whitespace-nowrap transition">
+                                class="px-3 py-1.5 bg-brand-border/60 hover:bg-brand-border text-white text-[11px] font-medium rounded-lg whitespace-nowrap transition"
+                                data-i18n="btnCopy">
                             Скопировать
                         </button>
                     </div>
@@ -437,17 +438,17 @@
 
             <!-- Section: Disclaimer -->
             <details class="group bg-brand-card/50 border border-brand-border/60 rounded-xl overflow-hidden">
-                <summary class="cursor-pointer p-4 text-xs font-medium text-brand-muted flex justify-between items-center select-none">
-                    <span>Правовая информация и отказ от ответственности</span>
+                <summary class="cursor-pointer p-4 text-xs font-medium text-brand-muted flex justify-between items-center select-none hover:text-white transition">
+                    <span data-i18n="disclaimerHeader">Правовая информация и отказ от ответственности</span>
                     <span class="text-[10px] group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div class="p-4 pt-0 border-t border-brand-border/30 mt-2 space-y-3 text-xs text-brand-muted leading-relaxed">
-                    <p>
+                    <p data-i18n="disclaimerText1">
                         Проект создается исключительно в ознакомительных, исследовательских и образовательных целях для изучения технологий маршрутизации и оптимизации сетевого трафика. Автор не предоставляет платных услуг и использует данные из публичных открытых источников. Пользователь несёт самостоятельную ответственность за соблюдение местного законодательства.
                     </p>
                     <div class="pt-2 border-t border-brand-border/30">
-                        <span class="font-medium text-zinc-300">Условия пожертвований:</span>
-                        <p class="mt-0.5">
+                        <span class="font-medium text-zinc-300" data-i18n="disclaimerTermsHeader">Условия пожертвований:</span>
+                        <p class="mt-0.5" data-i18n="disclaimerTermsText">
                             Все переводы являются строго добровольными и безвозмездными пожертвованиями. Они не являются оплатой услуг, не гарантируют персонального обслуживания или поддержки. Возврат средств не предусмотрен.
                         </p>
                     </div>
@@ -457,8 +458,8 @@
             <!-- Footer Bottom Info -->
             <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-brand-muted font-mono text-center sm:text-left">
                 <div>
-                    <span>Поддержка: </span>
-                    <a href="mailto:Fageter@protonmail.com" class="text-zinc-300">Fageter@protonmail.com</a>
+                    <span data-i18n="footerSupport">Поддержка: </span>
+                    <a href="mailto:Fageter@protonmail.com" class="text-zinc-300 hover:underline">Fageter@protonmail.com</a>
                 </div>
 
                 <div>
@@ -473,6 +474,101 @@
 
     <!-- Logic Script -->
     <script>
+        // Internationalization Dictionaries
+        const i18n = {
+            ru: {
+                navBot: "Бот",
+                zeroStarsText: "У репозитория пока <strong>0 звёзд</strong>. Вы можете быть первым, кто поставит звезду!",
+                starBtn: "Поставить звезду",
+                heroTitle: "Агрегатор подписок v2ray",
+                heroSubtitle: "Автоматически проверенные публичные узлы. Скопируйте ссылку, используйте зеркало или отсканируйте QR-код в клиент.",
+                guidesTitle: "Гайды и инструкции",
+                guidesSubtitle: "Подробные руководства по настройке клиентов v2ray на разных устройствах.",
+                v2rayngGuideTitle: "Инструкция по v2rayNG",
+                v2rayngGuideDesc: "Пошаговое руководство по настройке подписок на Android",
+                updateFreq: "Обновление каждые 3ч",
+                goEngineDesc: "Высокоскоростная современная подписка на движке Go. Минимальная задержка и максимальная производительность.",
+                whitelistDesc: "Сервера, работающие при жестких ограничениях и белых списках.",
+                fastPingDesc: "Конфигурации с наименьшим откликом для быстрого сёрфинга.",
+                stealthDesc: "Современные скрытные протоколы и устойчивый UDP-трафик.",
+                universalDesc: "Универсальный и сбалансированный набор всех поддерживаемых протоколов.",
+                btnCopy: "Скопировать",
+                btnCopied: "Скопировано!",
+                btnQr: "QR-код",
+                btnSource: "Исходник",
+                btnMirror: "Зеркало",
+                qrModalTitle: "QR-код подписки",
+                qrScanHint: "Отсканируйте код в приложении-клиенте.",
+                btnClose: "Закрыть",
+                donateTitle: "Поддержать проект",
+                donateSubtitle: "Если проект вам полезен, вы можете поддержать его развитие любым удобным способом:",
+                disclaimerHeader: "Правовая информация и отказ от ответственности",
+                disclaimerText1: "Проект создается исключительно в ознакомительных, исследовательских и образовательных целях для изучения технологий маршрутизации и оптимизации сетевого трафика. Автор не предоставляет платных услуг и использует данные из публичных открытых источников. Пользователь несёт самостоятельную ответственность за соблюдение местного законодательства.",
+                disclaimerTermsHeader: "Условия пожертвований:",
+                disclaimerTermsText: "Все переводы являются строго добровольными и безвозмездными пожертвованиями. Они не являются оплатой услуг, не гарантируют персонального обслуживания или поддержки. Возврат средств не предусмотрен.",
+                footerSupport: "Поддержка: "
+            },
+            en: {
+                navBot: "Bot",
+                zeroStarsText: "The repository currently has <strong>0 stars</strong>. You can be the first to star it!",
+                starBtn: "Star Repository",
+                heroTitle: "v2ray Subscription Aggregator",
+                heroSubtitle: "Automatically verified public nodes. Copy the link, use a mirror, or scan the QR code directly into your client.",
+                guidesTitle: "Guides & Tutorials",
+                guidesSubtitle: "Detailed setup instructions for v2ray clients across various platforms.",
+                v2rayngGuideTitle: "v2rayNG Setup Guide",
+                v2rayngGuideDesc: "Step-by-step tutorial for configuring subscriptions on Android",
+                updateFreq: "Updated every 3h",
+                goEngineDesc: "High-speed modern subscription powered by Go engine. Low latency and peak performance.",
+                whitelistDesc: "Servers optimized to operate under strict whitelist network restrictions.",
+                fastPingDesc: "Configurations filtered for lowest ping and rapid web browsing.",
+                stealthDesc: "Next-gen obfuscated protocols with robust UDP support.",
+                universalDesc: "A versatile, balanced collection of all available proxy protocols.",
+                btnCopy: "Copy",
+                btnCopied: "Copied!",
+                btnQr: "QR Code",
+                btnSource: "Source",
+                btnMirror: "Mirror",
+                qrModalTitle: "Subscription QR Code",
+                qrScanHint: "Scan this QR code using your proxy client app.",
+                btnClose: "Close",
+                donateTitle: "Support the Project",
+                donateSubtitle: "If you find this project helpful, you can support its maintenance via:",
+                disclaimerHeader: "Legal Notice & Disclaimer",
+                disclaimerText1: "This project is created strictly for educational, research, and informational purposes regarding network routing and traffic optimization technologies. The author does not provide commercial services and aggregates data from public open sources. Users carry full personal responsibility for complying with local regulations.",
+                disclaimerTermsHeader: "Donation Terms:",
+                disclaimerTermsText: "All transfers are non-refundable voluntary donations. They do not constitute payment for goods or services and guarantee no personal SLA or support.",
+                footerSupport: "Support: "
+            }
+        };
+
+        let currentLang = localStorage.getItem('site_lang') || 'ru';
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('site_lang', lang);
+            document.documentElement.lang = lang;
+            
+            // Update button label
+            const langBtn = document.getElementById('langBtn');
+            if (langBtn) {
+                langBtn.innerText = lang === 'ru' ? 'EN' : 'RU';
+            }
+
+            // Update text contents
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key]) {
+                    el.innerHTML = i18n[lang][key];
+                }
+            });
+        }
+
+        function toggleLanguage() {
+            const nextLang = currentLang === 'ru' ? 'en' : 'ru';
+            updateLanguage(nextLang);
+        }
+
         // Fetch GitHub Stars count
         async function fetchGitHubStars() {
             const repoUrl = 'https://api.github.com/repos/misha12333211-ctrl/proxy-subs';
@@ -497,25 +593,6 @@
             } catch (e) {
                 zeroNotice.classList.remove('hidden');
             }
-        }
-
-        // Custom Toast Notification System
-        function showToast(message) {
-            const container = document.getElementById('toastContainer');
-            const toast = document.createElement('div');
-            toast.className = 'bg-emerald-500 text-black px-4 py-2.5 rounded-xl text-xs font-semibold shadow-lg transition-all duration-300 transform translate-y-2 opacity-0 pointer-events-auto flex items-center gap-2';
-            toast.innerHTML = `<span>✓</span> <span>${message}</span>`;
-            
-            container.appendChild(toast);
-
-            setTimeout(() => {
-                toast.classList.remove('translate-y-2', 'opacity-0');
-            }, 10);
-
-            setTimeout(() => {
-                toast.classList.add('opacity-0', 'translate-y-2');
-                setTimeout(() => toast.remove(), 300);
-            }, 2500);
         }
 
         async function copyToClipboard(text) {
@@ -545,17 +622,15 @@
 
         async function copyToClipboardText(text, btn) {
             const success = await copyToClipboard(text);
-            if (success) {
-                showToast('Ссылка скопирована в буфер обмена!');
-                if (btn) {
-                    const originalText = btn.innerText;
-                    btn.classList.add('copied-anim');
-                    btn.innerText = 'Скопировано!';
-                    setTimeout(() => {
-                        btn.innerText = originalText;
-                        btn.classList.remove('copied-anim');
-                    }, 2000);
-                }
+            if (success && btn) {
+                const originalText = btn.innerText;
+                const copiedLabel = i18n[currentLang].btnCopied || 'Copied!';
+                btn.classList.add('copied-anim');
+                btn.innerText = copiedLabel;
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('copied-anim');
+                }, 2000);
             }
         }
 
@@ -578,21 +653,6 @@
             modal.classList.add('hidden');
         }
 
-        // Live Search Filter Function
-        function filterCards() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.card-item');
-
-            cards.forEach(card => {
-                const text = card.innerText.toLowerCase();
-                if (text.includes(input)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
         document.getElementById('qrModal').addEventListener('click', function(e) {
             if (e.target === this) closeQr();
         });
@@ -602,7 +662,10 @@
         });
 
         // Init on page load
-        document.addEventListener('DOMContentLoaded', fetchGitHubStars);
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchGitHubStars();
+            updateLanguage(currentLang);
+        });
     </script>
 </body>
 </html>
